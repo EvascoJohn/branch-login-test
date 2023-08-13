@@ -21,7 +21,7 @@ class UserFactory extends Factory
         return [
             'name' => fake()->name(),
             'branch_name' => Branch::where('id', random_int(1,5))->get()[0]->branch_name,
-            'password' => '123456', // password
+            'password' => '12345678910', // password
             'remember_token' => Str::random(10),
         ];
     }
